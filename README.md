@@ -34,7 +34,7 @@ jne senha_errada
 
 O código completo está em [`crackme.asm`](crackme.asm).
 
-![Código-fonte do crackme](docs/codigo.png)
+
 
 ## Como compilar e rodar
 
@@ -76,7 +76,7 @@ O raciocínio:
 
 Parando o programa exatamente antes do `repe cmpsb`, o conteúdo de `rdi` já revela o que o programa espera receber. Na captura abaixo, o GDB está parado nessa instrução: `rsi` mostra a entrada que digitei e `rdi` aponta para o início da seção de dados, onde está a senha correta.
 
-![GDB parado no repe cmpsb](docs/gdb-cmpsb.png)
+
 
 <details>
 <summary>Spoiler: a senha</summary>
